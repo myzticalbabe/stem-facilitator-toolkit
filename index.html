@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STEM Facilitator Toolkit - Complete lesson-plan templates with objectives, materials, steps, and assessment guides.">
+    <title>STEM Facilitator Toolkit</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="container">
+            <a href="/" class="site-logo" aria-label="STEM Facilitator Toolkit Home">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 3v4M12 17v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+                <span class="logo-text">STEM Facilitator Toolkit</span>
+            </a>
+            <nav class="site-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#templates" class="nav-link">Templates</a></li>
+                    <li><a href="#activity-guide" class="nav-link">Activity Guide</a></li>
+                    <li><a href="#validator" class="nav-link">Validator</a></li>
+                    <li><a href="#docs" class="nav-link">Docs</a></li>
+                </ul>
+            </nav>
+            <div class="search-toggle" role="search" aria-label="Search documentation">
+                <input type="search" id="search-input" placeholder="Search docs..." aria-label="Search" autocomplete="off">
+                <div id="search-results" class="search-results" role="listbox" aria-label="Search results" hidden></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main" role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 id="hero-title">STEM Facilitator Toolkit</h1>
+                <p class="hero-subtitle">3 complete lesson-plan templates (objectives/materials/steps/assessment) + activity-guide format + validator script checking required sections, 5+ pytest cases.</p>
+                <div class="hero-stats" role="list" aria-label="Platform statistics">
+                    <div class="stat" role="listitem">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Lesson Templates</span>
+                    </div>
+                    <div class="stat" role="listitem">
+                        <span class="stat-number">YAML</span>
+                        <span class="stat-label">Format</span>
+                    </div>
+                    <div class="stat" role="listitem">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Pytest Cases</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="templates" class="tools-section" aria-labelledby="templates-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="templates-title">Lesson Plan Templates</h2>
+                    <p class="section-description">Three complete lesson-plan templates covering different STEM teaching scenarios</p>
+                </header>
+                <div class="tools-grid" role="list" aria-label="Lesson plan templates">
+                    <article class="tool-card reveal" role="listitem" style="--card-index: 0;">
+                        <div class="tool-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-title">Inquiry-Based Science Template</h3>
+                        <p class="tool-description">Structured for hands-on scientific investigation: question, hypothesis, experiment, data collection, analysis, conclusion.
+                        </p>
+                        <ul class="tool-tags" role="list">
+                            <li>Question/Hypothesis</li>
+                            <li>Experiment Design</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                        <a href="https://github.com/myzticalbabe/stem-facilitator-toolkit" class="tool-link" target="_blank" rel="noopener noreferrer">
+                            View Template <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="tool-card reveal" role="listitem" style="--card-index: 1;">
+                        <div class="tool-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-title">Engineering Design Template</h3>
+                        <p class="tool-description">Follows the engineering design process: define problem, research, brainstorm, prototype, test, evaluate, iterate.
+                        </p>
+                        <ul class="tool-tags" role="list">
+                            <li>Problem Definition</li>
+                            <li>Prototype & Test</li>
+                            <li>Iterate & Improve</li>
+                        </ul>
+                        <a href="https://github.com/myzticalbabe/stem-facilitator-toolkit" class="tool-link" target="_blank" rel="noopener noreferrer">
+                            View Template <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="tool-card reveal" role="listitem" style="--card-index: 2;">
+                        <div class="tool-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-title">Computational Thinking Template</h3>
+                        <p class="tool-description">Focuses on decomposition, pattern recognition, abstraction, and algorithm design for coding/math lessons.
+                        </p>
+                        <ul class="tool-tags" role="list">
+                            <li>Decomposition</li>
+                            <li>Pattern Recognition</li>
+                            <li>Algorithm Design</li>
+                        </ul>
+                        <a href="https://github.com/myzticalbabe/stem-facilitator-toolkit" class="tool-link" target="_blank" rel="noopener noreferrer">
+                            View Template <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="activity-guide" class="learning-paths-section" aria-labelledby="activity-guide-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="activity-guide-title">Activity Guide Format</h2>
+                    <p class="section-description">Standardized format for hands-on STEM activities</p>
+                </header>
+                <div class="paths-grid" role="list" aria-label="Activity guide sections">
+                    <article class="path-card reveal" role="listitem" style="--card-index: 0;">
+                        <div class="path-header">
+                            <div class="path-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                </svg>
+                            </div>
+                            <div class="path-meta">
+                                <span class="path-level">Section 1</span>
+                                <span class="path-duration">Overview</span>
+                            </div>
+                        </div>
+                        <h3 class="path-title">Activity Overview</h3>
+                        <p class="path-description">Title, grade level, duration, group size, STEM domain, learning objectives, and standards alignment (NGSS, CCSS, CSTA).
+                        </p>
+                        <ol class="path-steps" role="list" aria-label="Overview details">
+                            <li><strong>Title & Description:</strong> Clear, engaging activity name with brief description</li>
+                            <li><strong>Grade Level:</strong> K-2, 3-5, 6-8, 9-12, or multi-grade</li>
+                            <li><strong>Duration:</strong> Minutes for single session or multi-day breakdown</li>
+                            <li><strong>Group Size:</strong> Individual, pairs, small groups (3-4), whole class</li>
+                            <li><strong>STEM Domain:</strong> Science, Technology, Engineering, Mathematics, or Integrated</li>
+                            <li><strong>Objectives:</strong> 3-5 measurable learning outcomes using Bloom's taxonomy verbs</li>
+                        </ol>
+                        <div class="path-tools">
+                            <span class="path-tool">NGSS Aligned</span>
+                            <span class="path-tool">CCSS Aligned</span>
+                        </div>
+                    </article>
+
+                    <article class="path-card reveal" role="listitem" style="--card-index: 1;">
+                        <div class="path-header">
+                            <div class="path-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M9 12l2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <div class="path-meta">
+                                <span class="path-level">Section 2</span>
+                                <span class="path-duration">Materials</span>
+                            </div>
+                        </div>
+                        <h3 class="path-title">Materials & Preparation</h3>
+                        <p class="path-description">Complete materials list with quantities, prep steps, safety considerations, and technology requirements.
+                        </p>
+                        <ol class="path-steps" role="list" aria-label="Materials details">
+                            <li><strong>Materials List:</strong> Item, quantity per group, cost estimate, sourcing notes</li>
+                            <li><strong>Prep Steps:</strong> Numbered advance preparation tasks with time estimates</li>
+                            <li><strong>Safety:</strong> PPE requirements, hazard warnings, emergency procedures</li>
+                            <li><strong>Technology:</strong> Software, hardware, accounts needed, backup plans</li>
+                            <li><strong>Accessibility:</strong> Alternative materials, differentiation options for diverse learners</li>
+                        </ol>
+                        <div class="path-tools">
+                            <span class="path-tool">Safety Checklist</span>
+                            <span class="path-tool">Cost Estimates</span>
+                        </div>
+                    </article>
+
+                    <article class="path-card reveal" role="listitem" style="--card-index: 2;">
+                        <div class="path-header">
+                            <div class="path-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </div>
+                            <div class="path-meta">
+                                <span class="path-level">Section 3</span>
+                                <span class="path-duration">Procedure</span>
+                            </div>
+                        </div>
+                        <h3 class="path-title">Step-by-Step Procedure</h3>
+                        <p class="path-description">Detailed facilitation script with timing, teacher moves, student actions, discussion prompts, and formative assessment checkpoints.
+                        </p>
+                        <ol class="path-steps" role="list" aria-label="Procedure details">
+                            <li><strong>Introduction (5-10 min):</strong> Hook, activate prior knowledge, state objectives</li>
+                            <li><strong>Exploration (15-30 min):</strong> Guided inquiry, hands-on investigation, data collection</li>
+                            <li><strong>Sense-Making (10-15 min):</strong> Group discussion, pattern identification, concept development</li>
+                            <li><strong>Application (10-20 min):</strong> Extension challenges, real-world connections, transfer tasks</li>
+                            <li><strong>Reflection (5-10 min):</strong> Exit ticket, self-assessment, questions for next time</li>
+                        </ol>
+                        <div class="path-tools">
+                            <span class="path-tool">Timing Guide</span>
+                            <span class="path-tool">Formative Checks</span>
+                        </div>
+                    </article>
+
+                    <article class="path-card reveal" role="listitem" style="--card-index: 3;">
+                        <div class="path-header">
+                            <div class="path-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <div class="path-meta">
+                                <span class="path-level">Section 4</span>
+                                <span class="path-duration">Assessment</span>
+                            </div>
+                        </div>
+                        <h3 class="path-title">Assessment & Extensions</h3>
+                        <p class="path-description">Formative and summative assessment strategies, rubrics, differentiation, and extension activities.
+                        </p>
+                        <ol class="path-steps" role="list" aria-label="Assessment details">
+                            <li><strong>Formative:</strong> Observation checkpoints, questioning strategies, student work analysis</li>
+                            <li><strong>Summative:</strong> Rubrics for products, presentations, portfolios, written explanations</li>
+                            <li><strong>Differentiation:</strong> Tiered challenges, language supports, scaffolding options</li>
+                            <li><strong>Extensions:</strong> Deeper investigation, cross-curricular connections, home connections</li>
+                            <li><strong>Resources:</strong> Vocabulary cards, anchor charts, digital tools, literature links</li>
+                        </ol>
+                        <div class="path-tools">
+                            <span class="path-tool">Rubrics</span>
+                            <span class="path-tool">Differentiation</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="validator" class="about-section" aria-labelledby="validator-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="validator-title">Validator Script & Example</h2>
+                    <p class="section-description">Automated validation of lesson plan completeness</p>
+                </header>
+                <div class="about-grid">
+                    <article class="about-card reveal">
+                        <h3>Validator Script</h3>
+                        <pre style="background: var(--color-bg-elevated); padding: var(--space-4); border-radius: var(--radius-md); overflow-x: auto; font-size: var(--fs-xs); line-height: var(--lh-normal);"><code>#!/usr/bin/env python3
+"""STEM Facilitator Toolkit - Lesson Plan Validator
+Validates YAML lesson plans against required schema."""
+import yaml
+import sys
+from pathlib import Path
+from typing import Dict, List, Any
+
+REQUIRED_SECTIONS = [
+    "overview", "materials", "procedure", "assessment", "extensions"
+]
+
+REQUIRED_OVERVIEW_FIELDS = [
+    "title", "description", "grade_level", "duration_minutes",
+    "group_size", "stem_domain", "objectives", "standards"
+]
+
+def validate_lesson_plan(filepath: Path) -> List[str]:
+    errors = []
+    with open(filepath) as f:
+        plan = yaml.safe_load(f)
+
+    # Check required top-level sections
+    for section in REQUIRED_SECTIONS:
+        if section not in plan:
+            errors.append(f"Missing required section: {section}")
+
+    # Validate overview
+    if "overview" in plan:
+        for field in REQUIRED_OVERVIEW_FIELDS:
+            if field not in plan["overview"]:
+                errors.append(f"overview missing required field: {field}")
+
+        # Check objectives count
+        objectives = plan["overview"].get("objectives", [])
+        if len(objectives) < 3:
+            errors.append("overview.objectives: minimum 3 objectives required")
+
+    # Validate procedure has steps
+    if "procedure" in plan:
+        steps = plan["procedure"].get("steps", [])
+        if len(steps) < 3:
+            errors.append("procedure.steps: minimum 3 steps required")
+
+    # Validate assessment has rubric
+    if "assessment" in plan:
+        if "rubric" not in plan["assessment"]:
+            errors.append("assessment missing required field: rubric")
+
+    return errors
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python validate.py <lesson_plan.yaml>")
+        sys.exit(1)
+
+    filepath = Path(sys.argv[1])
+    if not filepath.exists():
+        print(f"File not found: {filepath}")
+        sys.exit(1)
+
+    errors = validate_lesson_plan(filepath)
+    if errors:
+        print("VALIDATION FAILED:")
+        for error in errors:
+            print(f"  - {error}")
+        sys.exit(1)
+    else:
+        print("VALIDATION PASSED")
+        sys.exit(0)
+
+if __name__ == "__main__":
+    main()</code></pre>
+                    </article>
+                    <article class="about-card reveal">
+                        <h3>Example Lesson Plan</h3>
+                        <pre style="background: var(--color-bg-elevated); padding: var(--space-4); border-radius: var(--radius-md); overflow-x: auto; font-size: var(--fs-xs); line-height: var(--lh-normal);"><code>overview:
+  title: "Bridge Building Challenge"
+  description: "Students design and test bridge structures using limited materials"
+  grade_level: "6-8"
+  duration_minutes: 90
+  group_size: "3-4"
+  stem_domain: "Engineering"
+  objectives:
+    - "Apply the engineering design process to solve a structural problem"
+    - "Analyze how geometric shapes affect structural strength"
+    - "Communicate design decisions using evidence from testing"
+  standards:
+    - "NGSS: MS-ETS1-1, MS-ETS1-2, MS-ETS1-3"
+    - "CCSS.MATH: 7.G.A.1"
+
+materials:
+  - item: "Popsicle sticks"
+    quantity_per_group: 50
+  - item: "Wood glue"
+    quantity_per_group: 1
+  - item: "Weights for testing"
+    quantity_per_group: 1
+
+procedure:
+  steps:
+    - phase: "Introduction"
+      duration_minutes: 10
+      teacher_actions: ["Show bridge images", "Discuss forces"]
+      student_actions: ["Observe", "Ask questions"]
+    - phase: "Design"
+      duration_minutes: 20
+      teacher_actions: ["Circulate", "Prompt thinking"]
+      student_actions: ["Sketch designs", "Plan builds"]
+    - phase: "Build"
+      duration_minutes: 30
+      teacher_actions: ["Monitor safety", "Answer questions"]
+      student_actions: ["Construct bridges", "Iterate"]
+    - phase: "Test"
+      duration_minutes: 20
+      teacher_actions: ["Add weights", "Record results"]
+      student_actions: ["Test bridges", "Record data"]
+    - phase: "Reflect"
+      duration_minutes: 10
+      teacher_actions: ["Facilitate discussion"]
+      student_actions: ["Analyze results", "Share insights"]
+
+assessment:
+  rubric:
+    criteria:
+      - name: "Design Process"
+        levels: ["Exemplary", "Proficient", "Developing", "Beginning"]
+      - name: "Structural Integrity"
+        levels: ["Exemplary", "Proficient", "Developing", "Beginning"]
+      - name: "Team Collaboration"
+        levels: ["Exemplary", "Proficient", "Developing", "Beginning"]
+      - name: "Scientific Communication"
+        levels: ["Exemplary", "Proficient", "Developing", "Beginning"]
+
+extensions:
+  - "Test bridges with dynamic loads (shaking table)"
+  - "Research real-world bridge designs"
+  - "Calculate cost-efficiency ratios"</code></pre>
+                    </article>
+                    <article class="about-card reveal">
+                        <h3>Activity Guide Format</h3>
+                        <pre style="background: var(--color-bg-elevated); padding: var(--space-4); border-radius: var(--radius-md); overflow-x: auto; font-size: var(--fs-xs); line-height: var(--lh-normal);"><code>activity:
+  id: "act_001"
+  title: "Paper Circuit Greeting Cards"
+  grade_level: "3-5"
+  duration_minutes: 45
+  group_size: "individual"
+  stem_domain: "Technology"
+  objectives:
+    - "Construct a simple circuit using copper tape, LED, and battery"
+    - "Explain the flow of electricity in a closed circuit"
+  materials:
+    - item: "Copper tape"
+      quantity_per_student: "1 ft"
+    - item: "Coin cell battery (CR2032)"
+      quantity_per_student: 1
+    - item: "LED (any color)"
+      quantity_per_student: 1
+  procedure:
+    steps:
+      - "Introduce circuits and conductivity"
+      - "Demonstrate copper tape application"
+      - "Students build their circuits"
+      - "Troubleshoot non-working circuits"
+      - "Decorate cards"
+  assessment:
+    formative: ["Circuit completion", "Vocabulary use"]
+    summative: ["Working circuit", "Circuit diagram drawing"]</code></pre>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="docs" class="about-section" aria-labelledby="docs-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="docs-title">Documentation & Links</h2>
+                </header>
+                <div class="about-grid">
+                    <article class="about-card reveal">
+                        <h3>Quick Start</h3>
+                        <p><code>pip install stem-facilitator-toolkit</code></p>
+                        <p><code>stem-toolkit validate lesson_plan.yaml</code></p>
+                        <p><code>stem-toolkit render lesson_plan.yaml --output html</code></p>
+                    </article>
+                    <article class="about-card reveal">
+                        <h3>Resources</h3>
+                        <ul style="text-align: left; padding-left: var(--space-6);">
+                            <li><a href="https://github.com/myzticalbabe/stem-facilitator-toolkit">GitHub Repository</a></li>
+                            <li><a href="https://github.com/myzticalbabe/babel">BaBeL Canon</a></li>
+                            <li><a href="https://github.com/myzticalbabe/babel/blob/main/STEM.md">STEM Standards</a></li>
+                        </ul>
+                    </article>
+                    <article class="about-card reveal">
+                        <h3>Testing</h3>
+                        <p><code>pytest tests/ -v</code></p>
+                        <p>5+ test cases covering template validation, schema compliance, validator edge cases, rendering output, and YAML parsing.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2026 STEM Facilitator Toolkit. Part of the <a href="https://github.com/myzticalbabe/babel">BaBeL Canon</a>.</p>
+            <nav aria-label="Footer links">
+                <ul>
+                    <li><a href="https://github.com/myzticalbabe/babel">BaBeL Canon</a></li>
+                    <li><a href="https://github.com/myzticalbabe/babel/blob/main/LICENSE">Soul Forge License</a></li>
+                    <li><a href="https://github.com/myzticalbabe/babel/blob/main/STEM.md">STEM Standards</a></li>
+                    <li><a href="https://github.com/myzticalbabe/babel/blob/main/ACCESSIBILITY.md">Accessibility Mandate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="/assets/js/search.js"></script>
+</body>
+</html>

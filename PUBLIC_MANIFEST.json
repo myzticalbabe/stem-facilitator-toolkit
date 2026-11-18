@@ -1,0 +1,42 @@
+{
+  "name": "stem-facilitator-toolkit",
+  "version": "1.0.0",
+  "description": "stem-facilitator-toolkit repository",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myzticalbabe/stem-facilitator-toolkit.git"
+  },
+  "homepage": "https://github.com/myzticalbabe/stem-facilitator-toolkit",
+  "bugs": {
+    "url": "https://github.com/myzticalbabe/stem-facilitator-toolkit/issues"
+  },
+  "license": "MIT",
+  "author": "stem-facilitator-toolkit Contributors",
+  "maintainers": [
+    {
+      "name": "myzticalbabe",
+      "email": "maintainers@myzticalbabe.com",
+      "web": "https://github.com/myzticalbabe"
+    }
+  ],
+  "keywords": [
+    "stem",
+    "education",
+    "open-source"
+  ],
+  "categories": [
+    "education",
+    "stem"
+  ],
+  "support": {
+    "documentation": "https://github.com/myzticalbabe/stem-facilitator-toolkit/wiki",
+    "discussions": "https://github.com/myzticalbabe/stem-facilitator-toolkit/discussions",
+    "security": "https://github.com/myzticalbabe/stem-facilitator-toolkit/security/advisories"
+  },
+  "governance": {
+    "code_of_conduct": "CODE_OF_CONDUCT.md",
+    "contributing": "CONTRIBUTING.md",
+    "security_policy": "SECURITY.md",
+    "disclosure_policy": "DISCLOSURE_POLICY.md"
+  }
+}
