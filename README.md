@@ -13,3 +13,5 @@ python -m toolkit.validator templates
 ```bash
 pytest
 ```
+
+SOUL LICENCE ONLY — see `LICENSE` (`LicenseRef-SoulForge-1.0`).
